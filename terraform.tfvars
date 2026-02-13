@@ -1,0 +1,5 @@
+location       = "Canada Central"
+vm_name        = "canada-vm-demo"
+admin_username = "azureadmin"
+admin_password = "Password@1234!"
+vm_size        = "Standard_B2s"
