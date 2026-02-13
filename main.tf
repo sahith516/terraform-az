@@ -83,6 +83,11 @@ resource "azurerm_linux_virtual_machine" "vm" {
     azurerm_network_interface.nic.id
   ]
 
+lifecycle {
+ignore_changes = [
+size
+]
+}
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
